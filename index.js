@@ -1,3 +1,6 @@
+let box = []
+let sqNumber = 6
+
 function refresh()
 {   //color generator
     function generator()
@@ -15,15 +18,55 @@ function refresh()
 
     //for random color for each square
 
-    for(let i = 1 ; i<=6 ; i++)
+    for(let i = 1 ; i<=sqNumber ; i++)
     {
         let q = generator()
         let w = generator()
         let e = generator()
         
         document.getElementById(`sq${i}`).style.backgroundColor = `rgb(${q}, ${w}, ${e})`
+        box.push(i)
     }
 
+    //generates a random number
+
+    function number()
+    {
+       let rand =  Math.floor(Math.random() * sqNumber + 1)
+       document.getElementById(`sq${rand}`).style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    }
+    number()
+
     
+
 }
 refresh()
+
+
+
+
+
+document.getElementById("left").onclick = function()
+{
+    refresh()
+}
+
+
+
+document.getElementById("right1").onclick = function()
+{ 
+    sqNumber = 3
+            for(let i = 4; i<=6 ;i++)
+            {document.getElementById(`sq${i}`).style.display = 'none'}
+    refresh()
+}
+
+
+document.getElementById("right2").onclick = function()
+{ sqNumber = 6
+    for(let i = 4; i<=6 ;i++)
+    {document.getElementById(`sq${i}`).style.display = 'block'}
+    refresh()
+}
+
+
