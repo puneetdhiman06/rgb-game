@@ -36,8 +36,9 @@ function refresh()
        document.getElementById(`sq${rand}`).style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     }
     number()
-
     
+    
+
 
 }
 refresh()
@@ -46,18 +47,19 @@ refresh()
 
 
 
-document.getElementById("left").onclick = function()
+$("#left").click(function()
 {
     refresh()
-}
+})
 
 
 
 document.getElementById("right1").onclick = function()
 { 
     sqNumber = 3
-            for(let i = 4; i<=6 ;i++)
-            {document.getElementById(`sq${i}`).style.display = 'none'}
+    for(let i = 4; i<=6 ;i++)
+        {document.getElementById(`sq${i}`).style.display = 'none'}
+
     refresh()
 }
 
@@ -69,4 +71,6 @@ document.getElementById("right2").onclick = function()
     refresh()
 }
 
+
+alert("wrong commit");
 
