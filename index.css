@@ -80,4 +80,21 @@ button:hover {
 .textblock {
   font-size: 1rem;
 }
+
+
+@media (max-width: 575.98px) { 
+  #type-txt{
+    width: 100%;
+  }
+  #main{
+   margin: 0 auto;
+   width: 95%;
+   padding-top: 30vw;
+
+  }
+  .square{
+    width:30vw;
+    height: 30vw;
+  }
+ }
 /*# sourceMappingURL=index.css.map */
