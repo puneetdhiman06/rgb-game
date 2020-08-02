@@ -96,7 +96,6 @@ for(let w=1;w<=6;w++)
         if( value == `rgb(${r}, ${g}, ${b})` )
         {
             document.getElementById("answer-txt").innerHTML = `SAHI HAI`
-            document.getElementById("answer-txt").style.color = "#2C8E99"
             for(let q=1;q<=6;q++)
             {    
                   document.getElementById("sq"+q).style.backgroundColor = value
@@ -108,9 +107,7 @@ for(let w=1;w<=6;w++)
         }
         else{
             document.getElementById("answer-txt").innerHTML = `TRY AGAIN`
-            document.getElementById("answer-txt").style.color = "rgb(255,0,0)"
             document.getElementById("sq"+box).style.visibility = "hidden"
-
         }
     }
 
@@ -134,7 +131,6 @@ document.getElementById("right1").onclick = function()
     sqNumber = 3
     for(let i = 4; i<=6 ;i++)
         {document.getElementById(`sq${i}`).style.display = 'none'}
-
     refresh()
 }
  
