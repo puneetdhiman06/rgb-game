@@ -3,6 +3,7 @@ let sqNumber = 6
 
 function refresh()
 {   document.getElementById("navbar").style.backgroundColor = "#2C8E99"
+    document.getElementById("left").innerHTML = "NEW COLOR"  
 for(let w=1;w<=6;w++)
 {    
       document.getElementById("sq"+w).style.visibility = "visible"
@@ -60,7 +61,7 @@ for(let w=1;w<=6;w++)
         answer(colorOfThis,box);
     }
     
-    document.getElementById("sq3").onclick = function()
+        document.getElementById("sq3").onclick = function()
     {
         let box = 3;
         colorOfThis = document.getElementById("sq3").style.backgroundColor;
