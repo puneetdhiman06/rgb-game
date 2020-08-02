@@ -34,7 +34,7 @@ button:hover {
   background-color: #2C8E99;
   color: white;
   border: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 #type-txt {
